@@ -13,7 +13,6 @@
     behaviors {
         backspace_delete: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DELETE";
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
@@ -21,21 +20,18 @@
         };
         ctrl_lgui_left: ctrl_lgui_left {
             compatible = "zmk,behavior-macro";
-            label = "CTRL_LGUI_LEFT";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             bindings = <&kp LCTRL>, <&kp LGUI>, <&kp LEFT>;
         };
         ctrl_lgui_right: ctrl_lgui_right {
             compatible = "zmk,behavior-macro";
-            label = "CTRL_LGUI_RIGHT";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             bindings = <&kp LCTRL>, <&kp LGUI>, <&kp RIGHT>;
         };
 
         // Not used but kept as example for whenever I need it
         // capslock_layer1: capslock_layer1 {
         //     compatible = "zmk,behavior-tap-dance";
-        //     label = "CAPSLOCK_LAYER1";
         //     #binding-cells = <0>;
         //     bindings = <&mo 1>, <&kp CAPSLOCK>;
         // };
